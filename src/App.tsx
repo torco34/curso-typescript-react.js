@@ -1,22 +1,24 @@
-import { Routes, Route, Outlet, Link } from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Header } from "./components/header/Header";
+import { Pages } from "./components/curso-typescript/Pages";
 
 function App() {
   return (
-    <>
+    <Router>
+      <Header />
       <Routes>
-        <Route path="/" element={<Header />}>
-          {/* <Route index element={<Home />} />
-          <Route path="about" element={<About />} />
-          <Route path="dashboard" element={<Dashboard />} />
-
-          {/* Using path="*"" means "match anything", so this route
-                acts like a catch-all for URLs that we don't have explicit
-                routes for. */}
-          {/* <Route path="*" element={<NoMatch />} /> */}
-        </Route>
+        <Route path="/" element={<Pages />} />
+        {/* <Route path="/perfil" element={<Perfil />} /> */}
+        {/* <Route path="/ejercicio" element={<Ejercicio />} /> */}
+        {/* <Route path="/restauran" element={<Pages />} /> */}
+        {/* <Route path="/index" element={<Index />}></Route>
+  <Route path="/pages" element={<Pages2 />}></Route>
+  <Route path="/pages2" element={<Books />}></Route>
+  <Route path="/pages3" element={<PagesEjercicio />}></Route>
+  <Route path="/pages4" element={<Pages4 />}></Route>
+  <Route path="/pages5" element={<Pages5 />}></Route> */}
       </Routes>
-    </>
+    </Router>
   );
 }
 
