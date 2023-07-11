@@ -6,10 +6,10 @@ export const Header = () => {
       <nav className="bg-dark">
         <ul>
           <li>
-            <Link to="/pages">Home</Link>
+            <Link to="/outlet">Outlet</Link>
           </li>
           <li>
-            <Link to="/about">About</Link>
+            <Link to="/ejem">Ejemplo</Link>
           </li>
           <li>
             <Link to="/dashboard">Dashboard</Link>

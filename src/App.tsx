@@ -1,13 +1,25 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { Header } from "./components/header/Header";
-import { Pages } from "./components/curso-typescript/Pages";
+// import { Pages } from "./components/curso-typescript/Pages";
+import { Outlet } from "./components/outlet/Outlet";
+import { Produecto } from "./components/outlet/Produecto";
+import { Practica } from "./components/practicas/Practica";
 
 function App() {
   return (
     <Router>
       <Header />
       <Routes>
-        <Route path="/" element={<Pages />} />
+        {/* ruta outlet */}
+        <Route path="/outlet" element={<Produecto />}>
+          <Route path="" element={<Outlet />}></Route>
+
+        </Route>
+        {/* ejemplo */}
+        <Route path="/ejem" element={<Practica />} />
+
+
+
         {/* <Route path="/perfil" element={<Perfil />} /> */}
         {/* <Route path="/ejercicio" element={<Ejercicio />} /> */}
         {/* <Route path="/restauran" element={<Pages />} /> */}
