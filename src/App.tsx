@@ -4,7 +4,7 @@ import { Header } from "./components/header/Header";
 import { Outlet } from "./components/outlet/Outlet";
 import { Produecto } from "./components/outlet/Produecto";
 import { Practica } from "./components/practicas/Practica";
-
+import { ReactHook } from "./components/hookReactForm/ReactHook";
 function App() {
   return (
     <Router>
@@ -18,7 +18,7 @@ function App() {
         {/* ejemplo */}
         <Route path="/ejem" element={<Practica />} />
 
-
+        <Route path="/hook" element={<ReactHook />} />
 
         {/* <Route path="/perfil" element={<Perfil />} /> */}
         {/* <Route path="/ejercicio" element={<Ejercicio />} /> */}

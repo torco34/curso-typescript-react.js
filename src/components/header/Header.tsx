@@ -12,7 +12,7 @@ export const Header = () => {
             <Link to="/ejem">Ejemplo</Link>
           </li>
           <li>
-            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/hook">React hook form</Link>
           </li>
           <li>
             <Link to="/nothing-here">Nothing Here</Link>
