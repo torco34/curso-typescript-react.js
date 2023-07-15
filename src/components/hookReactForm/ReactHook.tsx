@@ -19,16 +19,16 @@ export const ReactHook = () => {
             <h2 className='text-center text-info'>React Hook Form</h2>
             <form onSubmit={onSubmit}>
                 <div className='form-group'>
-                    <input {...register("firstName", { required: true })} className='form-control' placeholder='Nombre' />
+                    <input {...register("firstName", { required: true })} className='form-control' placeholder='Nombre:' />
                 </div>
                 <div className='form-group'>
-                    <input {...register("email", { required: true })} className='form-control' placeholder='Email' />
+                    <input {...register("email", { required: true })} className='form-control' placeholder='Email:' />
                 </div>
                 <div className='form-group'>
-                    <input {...register("secondName", { required: true })} className='form-control' placeholder='Apellido' />
+                    <input {...register("secondName", { required: true })} className='form-control' placeholder='Apellido:' />
                 </div>
                 <div className='form-group'>
-                    <input {...register("password", { required: true })} className='form-control' type='password' placeholder='Contraseña' />
+                    <input {...register("password", { required: true })} className='form-control' type='password' placeholder='Contraseña:' />
                 </div>
                 <div className='form-group'>
                     <input
@@ -38,7 +38,7 @@ export const ReactHook = () => {
                         })}
                         className='form-control'
                         type='password'
-                        placeholder='Confirmar Contraseña'
+                        placeholder='Confirmar Contraseña:'
                     />
                 </div>
                 <button type='submit' className='btn btn-primary'>Enviar</button>
@@ -47,5 +47,4 @@ export const ReactHook = () => {
     );
 
 };
-    )
-}
+
