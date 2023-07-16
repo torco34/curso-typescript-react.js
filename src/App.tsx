@@ -5,6 +5,7 @@ import { Outlet } from "./components/outlet/Outlet";
 import { Produecto } from "./components/outlet/Produecto";
 import { Practica } from "./components/practicas/Practica";
 import { ReactHook } from "./components/hookReactForm/ReactHook";
+import { PagesApp } from "./components/MobX/PagesApp.js"
 function App() {
   return (
     <Router>
@@ -19,16 +20,8 @@ function App() {
         <Route path="/ejem" element={<Practica />} />
 
         <Route path="/hook" element={<ReactHook />} />
+        <Route path="/mobx" element={<PagesApp />} />
 
-        {/* <Route path="/perfil" element={<Perfil />} /> */}
-        {/* <Route path="/ejercicio" element={<Ejercicio />} /> */}
-        {/* <Route path="/restauran" element={<Pages />} /> */}
-        {/* <Route path="/index" element={<Index />}></Route>
-  <Route path="/pages" element={<Pages2 />}></Route>
-  <Route path="/pages2" element={<Books />}></Route>
-  <Route path="/pages3" element={<PagesEjercicio />}></Route>
-  <Route path="/pages4" element={<Pages4 />}></Route>
-  <Route path="/pages5" element={<Pages5 />}></Route> */}
       </Routes>
     </Router>
   );

@@ -14,6 +14,12 @@ export const ReactHook = () => {
         alert("Hola mundo:" + JSON.stringify(values))
         reset();
     })
+
+
+
+
+
+    
     return (
         <div className='container'>
             <h2 className='text-center text-info'>React Hook Form</h2>

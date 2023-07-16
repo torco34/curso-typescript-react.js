@@ -15,7 +15,9 @@ export const Header = () => {
             <Link to="/hook">React hook form</Link>
           </li>
           <li>
-            <Link to="/nothing-here">Nothing Here</Link>
+            <Link to="/mobx">mobx</Link>
+
+            <Link to="/use">useEffect</Link>
           </li>
         </ul>
       </nav>
