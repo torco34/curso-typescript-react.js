@@ -1,0 +1,11 @@
+.cont-nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cont-nav li a{
+    text-decoration: none;
+       margin-left: 20px;
+       color: aliceblue;
+   } 
