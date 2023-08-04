@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import UseEfe from './UseEfe'
+import { Edictica } from './Edictica'
 const Hijo = ({ data }) => {
     return <p>Soy el hijo: ;;; {data}</p>
 }
@@ -14,7 +15,8 @@ export const Practica = () => {
             <Hijo data={data} />
             <button onClick={handleOnclick}>ver data</button>
             <div>
-              < UseEfe/>
+                < UseEfe />
+                <Edictica />
             </div>
         </div>
     )
