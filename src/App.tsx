@@ -10,6 +10,9 @@ import { Ejercicio } from "./components/useEfecto/Ejercicio.";
 
 import { Filter } from "./components/filter/pages/Filter";
 import { PagesReutilizar } from "./components/codigoReutilizable/PagesReutilizar";
+import { Item } from "./components/practicas/Item";
+import { Aplicacion } from "./components/practicas/Aplicacion";
+
 // import { ModalComponent } from "./components/codigoReutilizable/bootstrap-react/ModalComponent";
 function App() {
   return (
@@ -22,6 +25,10 @@ function App() {
         </Route>
         {/* ejemplo */}
         <Route path="/practicas" element={<PracticasPages />} />
+        <Route path="/item" element={<Item />} />
+        <Route path="/aplica" element={<Aplicacion />} />
+
+        <Route />
         <Route path="/reutilizar" element={<PagesReutilizar />} >
           {/* <Route path="/modal" element={<ModalComponent />} /> */}
         </Route>
