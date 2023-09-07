@@ -3,16 +3,21 @@ import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import Modal from 'react-bootstrap/Modal';
 
-export const ModalItem = ({ setInputStad, inputStad }: any) => {
+export const ModalItem = ({ setInputStad, inputStad, crearItem, text, crearTemas}: any) => {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const hendleCrearItem = () => {
+    crearItem();
+    handleClose();
+    crearTemas()
+  }
 
   return (
     <>
       <Button style={{ background: "#042044", width: "100%" }} onClick={handleShow}>
-        Launch demo modal
+       {text}
       </Button>
 
       <Modal show={show} onHide={handleClose}>
@@ -44,7 +49,7 @@ export const ModalItem = ({ setInputStad, inputStad }: any) => {
           <Button variant="secondary" onClick={handleClose}>
             Close
           </Button>
-          <Button variant="primary" onClick={handleClose}>
+          <Button variant="primary" onClick={hendleCrearItem}>
             Save Changes
           </Button>
         </Modal.Footer>

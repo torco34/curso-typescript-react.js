@@ -21,7 +21,7 @@ export const Header = () => {
             <Link to="/mobx">mobx</Link>
           </li >
           <li className="text-center btn list-inline-item ">
-            <Link to="/use">useEffect</Link>
+            <Link to="/usefe">useEffect</Link>
           </li >
           <li className="border border-info btn list-inline-item ">
             <Link to="/fil">filter</Link>

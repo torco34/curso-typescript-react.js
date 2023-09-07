@@ -12,6 +12,9 @@ import { Filter } from "./components/filter/pages/Filter";
 import { PagesReutilizar } from "./components/codigoReutilizable/PagesReutilizar";
 import { Item } from "./components/practicas/Item";
 import { Aplicacion } from "./components/practicas/Aplicacion";
+import UseEfe from "./components/practicas/UseEfe";
+import { UseEfecto } from "./components/useEffect/UseEfecto";
+import { PagesUseEffect } from "./components/useEffect/PagesUseEffect";
 
 // import { ModalComponent } from "./components/codigoReutilizable/bootstrap-react/ModalComponent";
 function App() {
@@ -34,7 +37,9 @@ function App() {
         </Route>
         <Route path="/hook" element={<ReactHook />} />
         <Route path="/mobx" element={<PagesApp />} />
-        <Route path="/use" element={<Ejercicio />} />
+        <Route path="/usefe" element={<PagesUseEffect />} />
+          <Route path="/efecto" element={<UseEfecto />} />
+        <Route/>
         <Route path="/fil" element={<Filter />} />
       </Routes>
     </Router>
