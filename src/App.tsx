@@ -9,13 +9,14 @@ import { PagesApp } from "./components/MobX/PagesApp"
 import { Ejercicio } from "./components/useEfecto/Ejercicio.";
 
 import { Filter } from "./components/filter/pages/Filter";
-import { PagesReutilizar } from "./components/codigoReutilizable/PagesReutilizar";
+// import { PagesReutilizar } from "./components/codigoReutilizable/PagesReutilizar";
 import { Item } from "./components/practicas/Item";
 import { Aplicacion } from "./components/practicas/Aplicacion";
 import UseEfe from "./components/practicas/UseEfe";
 import { UseEfecto } from "./components/useEffect/UseEfecto";
 import { PagesUseEffect } from "./components/useEffect/PagesUseEffect";
-
+import { PagesFather } from "./components/practiNever/PagesFather";
+import { PagesPracticas } from "./components/practicas/PagesPracticas";
 // import { ModalComponent } from "./components/codigoReutilizable/bootstrap-react/ModalComponent";
 function App() {
   return (
@@ -27,19 +28,17 @@ function App() {
           <Route path="" element={<Outlet />}></Route>
         </Route>
         {/* ejemplo */}
-        <Route path="/practicas" element={<PracticasPages />} />
+        <Route path="/practica" element={<PagesPracticas />} />
         <Route path="/item" element={<Item />} />
-        <Route path="/aplica" element={<Aplicacion />} />
+        {/* <Route path="/practica" element={<PagesFather  />} /> */}
 
         <Route />
-        <Route path="/reutilizar" element={<PagesReutilizar />} >
-          {/* <Route path="/modal" element={<ModalComponent />} /> */}
-        </Route>
+
         <Route path="/hook" element={<ReactHook />} />
         <Route path="/mobx" element={<PagesApp />} />
         <Route path="/usefe" element={<PagesUseEffect />} />
-          <Route path="/efecto" element={<UseEfecto />} />
-        <Route/>
+        {/* <Route path="/efecto" element={<UseEfecto />} /> */}
+        <Route />
         <Route path="/fil" element={<Filter />} />
       </Routes>
     </Router>

@@ -9,7 +9,7 @@ export const Header = () => {
             <Link to="/outlet">Outlet</Link>
           </li>
           <li className="border border-info  btn list-inline-item text-center ">
-            <Link to="/practicas">Practicas        </Link>
+            <Link to="/practica">Practicas    </Link>
           </li>
           <li className="border border-info btn list-inline-item ">
             <Link to="/reutilizar">Código Reutiliza</Link>

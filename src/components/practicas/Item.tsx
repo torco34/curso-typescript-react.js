@@ -1,6 +1,6 @@
 import { useState } from "react"
 import { Button } from "react-bootstrap"
-import { Nav } from "./Nav"
+import { Nav } from "./navs/Nav"
 
 
 export const Item = () => {
